@@ -1,11 +1,11 @@
-print("Welcome to my BMI Calculator\n")
+print("\nWelcome to my BMI Calculator\n")
 
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
 
-bmi = float(weight) / (float(height) * float(height))
+bmi = float(weight) / float(height) ** 2
 
-print(int(bmi))
+print(f"\nYour BMI is: {round(bmi)}")
 
 if bmi < 18.5:
     print("You're Underweight")
